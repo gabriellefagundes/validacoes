@@ -1,0 +1,44 @@
+html, body{
+    padding: 0;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    display: flex;
+    background-color: rgb(176, 44, 228);
+}
+h2, label{
+    color: rgb(92, 0, 128);
+}
+button{
+    color: white;
+    font-weight: bolder;
+}
+ 
+#button{
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(92, 0, 128);
+    margin-top: 30px;
+}
+input#email{
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.form{
+    display: flex;
+    background-color: rgb(204, 204, 204);
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
