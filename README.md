@@ -23,7 +23,7 @@ Esse projeto é composto por 2 páginas, uma contendo a validação de E-mail e 
 * ``document.forms[0].email.value.indexOf("@") == -1``: Verifica se o caractere @ está presente no e-mail.
 * ``document.forms[0].email.value.indexOf(".") == -1``: Verifica se o caractere . está presente no e-mail.
 As verificações são feitas no primeiro formulário ``(forms[0])`` da página, acessando o campo de e-mail ``(email)``.
-| ``alert("Por favor, informe um e-mail válido");return false;`` | Se qualquer uma das verificações falhar, uma mensagem de alerta é exibida informando que o e-mail é inválido. A função retorna ``false``, o que normalmente interrompe o envio do formulário (se a função estiver associada a um evento de submissão).
+* ``alert("Por favor, informe um e-mail válido");return false;``: Se qualquer uma das verificações falhar, uma mensagem de alerta é exibida informando que o e-mail é inválido. A função retorna ``false``, o que normalmente interrompe o envio do formulário (se a função estiver associada a um evento de submissão).
 Se todas as verificações passarem, uma mensagem de sucesso é exibida. O código então seleciona o elemento com o ``id`` ``email`` e atualiza seu conteúdo HTML com o valor do e-mail inserido.
 
 ### Validação de E-mail:
