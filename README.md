@@ -6,6 +6,26 @@ Nesse projeto, foi criado 2 páginas de validações (1 especificamente para a v
 
 ## Sobre o projeto 📋 
 Esse projeto é composto por 2 páginas, uma contendo a validação de E-mail e a outra para a validação do CPF. Neste README inclui o uso de fotos pois assim fica de uma forma mais fácil de ser entendido, não sendo uma leitura muito complexa e o site tornando-se bem fácil de ser utilizado.
+
+## Código JavaScript do CPF
+* ``element``: É uma referência a um objeto ``Element``, ou null se um elemento com o ID especificado não estiver contido neste documento.
+* ``id``: É uma string que diferência maiúsculas e minúsculas representando o ID único do elemento sendo procurado.
+* ``bubmit``: O evento submit é disparado quando é feita a submissão de um `` <form> ``
+* ``preventDefault``: Cancela o evento se for cancelável, sem parar a propagação do mesmo.
+* ``const``: A declaração ``const`` cria uma variável cujo o valor é fixo, ou seja, uma constante somente leitura.
+* ``value``: Tem a finalidade de fazer com que o comando onde ele é usado, considere o valor do parâmetro passado e não o próprio parâmetro.
+* ``textContent``: A propriedade ``textContent`` da interface ``Node`` representa o conteúdo do texto de um nó e de seus descendentes.
+* ``replace``: O ``replace()`` método de ``String`` valores retorna uma nova string com uma, algumas ou todas as correspondências de a ``pattern`` substituídas por a ``replacement``.
+* ``length``: Cancela o evento se for cancelável, sem parar a propagação do mesmo.
+
+## Código JavaScript do E-mail
+* ``document.forms[0].email.value == ""``: Verifica se o campo de e-mail está vazio.
+* ``document.forms[0].email.value.indexOf("@") == -1``: Verifica se o caractere @ está presente no e-mail.
+* ``document.forms[0].email.value.indexOf(".") == -1``: Verifica se o caractere . está presente no e-mail.
+As verificações são feitas no primeiro formulário ``(forms[0])`` da página, acessando o campo de e-mail ``(email)``.
+| ``alert("Por favor, informe um e-mail válido");return false;`` | Se qualquer uma das verificações falhar, uma mensagem de alerta é exibida informando que o e-mail é inválido. A função retorna ``false``, o que normalmente interrompe o envio do formulário (se a função estiver associada a um evento de submissão).
+Se todas as verificações passarem, uma mensagem de sucesso é exibida. O código então seleciona o elemento com o ``id`` ``email`` e atualiza seu conteúdo HTML com o valor do e-mail inserido.
+
 ### Validação de E-mail:
 ![](telaemail.png)
 
